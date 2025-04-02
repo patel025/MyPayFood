@@ -17,23 +17,31 @@
                 <div class="Logo">
                     <img src="https://restfood.onlywebcoding.com.ua/images/logo.png">
                 </div>
-                <div class="Link">
-                    <a href="javascript:void(0);">
+                <div class="Navigation">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Dishes">Dishes</a></li>
+                        <li><a href="#About">About us</a></li>
+                        <li><a href="#Gallery">Gallery</a></li>
+                        <li><a href="#Contact">Contact us</a></li>
+                    </ul>
+                    <!-- <a target="_blank" href="http://mypaycafe.food4me.net/">
                         MyOrdering
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
     </header>
 
     <section>
-        <div class="SlideArea">
+        <div class="SlideArea" id="Home">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="SlideBox">
                             <h1>Best quality food</h1>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias provident laborum, recusandae delectus corrupti reprehenderit error distinctio eligendi qui consequuntur officia.</p>
+                            <a target="_blank" href="http://mypaycafe.food4me.net/">order now</a>
                         </div>
                     </div>
                 </div>
@@ -42,7 +50,7 @@
     </section>
 
     <section>
-        <div class="DishesArea">
+        <div class="DishesArea" id="Dishes">
             <div class="container">
                 <div class="Disheshead">
                     <h2><span><img src="images/Leaf.png"></span> Our Special Dishes</h2>
@@ -118,13 +126,13 @@
     </section>
 
     <section>
-        <div class="AboutArea">
+        <div class="AboutArea" id="About">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-5">
                         <div class="AboutLeft">
                             <img src="images/About.jpg" alt="" />
-                            <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i class="fa fa-play"></i></a>
+                            <!-- <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i class="fa fa-play"></i></a> -->
                         </div>
                     </div>
                     <div class="col-sm-7">
@@ -162,7 +170,7 @@
                     Double Cheese Pizza <br />
                     30% off friday only
                 </h2>
-                <a class="btn booking-scroll" href="">book a table</a>
+                <a class="btn booking-scroll" target="_blank" href="http://mypaycafe.food4me.net/">order now</a>
             </div>
         </div> 
     </section>
@@ -392,7 +400,7 @@
     </section>
 
     <section>
-        <div class="GalleryArea">
+        <div class="GalleryArea" id="Gallery">
             <div class="container">
                 <div class="GalleryHead">
                     <h2><span><img src="images/Leaf.png"></span> Gallery</h2>
@@ -497,9 +505,9 @@
     </section>
 
     <section>
-        <div class="ContactArea">
+        <div class="ContactArea" id="Contact">
             <div class="container">
-                <h2><span><img src="images/Leaf.png"></span> Book a table</h2>
+                <h2><span><img src="images/Leaf.png"></span> Contacts</h2>
                 <div class="row align-items-center">
                     <div class="col-sm-3">
                         <div class="ContactBox">
@@ -587,6 +595,30 @@
             }); 
         });
     </script>
+
+    <script type="text/javascript">
+        $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= 50) {
+      $(".Header").addClass("Fixed");
+    } else {
+      $(".Header").removeClass("Fixed");
+    }
+});
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+         $(window).scroll(function(){
+            let newUrlIS =  window.location.origin + window.location.pathname
+            history.pushState({}, null, newUrlIS);
+        });
+        $(".Navigation ul li a").click(function(){
+            let newUrlIS =  window.location.origin + window.location.pathname 
+            history.pushState({}, null, newUrlIS);
+        });
+    });
+</script>
 
 </body>
 </html>
