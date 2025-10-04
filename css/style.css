@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('animate.css');
-@import url('owl.carousel.css');  
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -18,10 +16,11 @@ body {
     font-family: 'Mulish', sans-serif !important;
     font-size: 13px;
     color: #3a3a3a;
-    background-color: #fff;
+    background-color: #dedede;
+    min-height: 100vh;
 }
  
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
   width: 7px;
   height: 8px;
 } 
@@ -34,11 +33,12 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #ffffff;
   border-radius: 10px;
-}
+}*/
 
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .clearfix {
@@ -107,6 +107,8 @@ img {
     border: 0;
     outline: none;
     max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
 }
 
 input[type="text"],
@@ -130,119 +132,126 @@ p { margin: 0; padding: 0; }
 input[type=date].form-control{ text-transform: uppercase !important; }
 select{cursor: pointer;outline: 0;}
 
-.Header{z-index:9;width:100%;padding:20px 0;position: absolute;top: 0;}
-.Header .container{display:flex;justify-content:space-between;align-items:center}
-.Header .Link a{border:2px solid #fff;padding:9px 25px;color:#fff;font-size:14px;border-radius:50px;background-color:#fff;color:#000;font-weight:700;letter-spacing:.5px}
+.Header{background-color:#fff;padding: 10px 0;}
+.Header .HeaderBox{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.Header .HeaderBox .Logo{width:auto}
+.Header .HeaderBox .Logo img{max-width: 135px;}
+.Header .HeaderBox .Navigation ul li{display:inline-block}
+.Header .HeaderBox .Navigation ul li a{background-color:#469bdb;padding: 10px 25px;color:#fff;font-size: 14px;font-weight:700;border-radius:50px;display:block}
 
-.Header .Navigation{}
-.Header .Navigation ul{}
-.Header .Navigation ul li{display: inline-block;font-family: 'Poppins', sans-serif;margin: 0 0 0 40px;}
-.Header .Navigation ul li a{color: #fff;text-transform: uppercase;font-weight: 800;font-size: 18px;letter-spacing: 0.5px;}
-.Header .Navigation ul li a:hover{color: #ffce00;}
+.ExperinceArea{padding:25px 0;background:#f1eeee}
+.ExperinceArea .ExperinceBox{max-width:1000px;margin:auto;box-shadow:0 0 10px #ddd}
+.ExperinceArea .ExperinceBox .ExperinceHead{background-color:#000;position:relative}
+.ExperinceArea .ExperinceBox .ExperinceHead img{opacity:.6;width:100%}
+.ExperinceArea .ExperinceBox .ExperinceHead figcaption{position:absolute;bottom:50px;width:100%;text-align:center;color:#fff}
+.ExperinceArea .ExperinceBox .ExperinceHead figcaption h3{font-size:50px;margin:0 0 70px 0;font-weight:700}
+.ExperinceArea .ExperinceBox .ExperinceHead figcaption a{background-color:#469bdb;padding:12px 26px;color:#fff;font-size:15px;font-weight:700;border-radius:7px;display:inline-block}
+.ExperinceArea .ExperinceBox .ExperinceBody{background-color:#fff;padding:25px}
 
-.Fixed{animation:0.7s ease 0s normal none 1 running;position:fixed;transition:all 0.5s ease-in-out;background: #000;top:0;z-index:99}
+.PopularBox{margin:0 0 30px 0}
+.PopularBox h3{font-size:22px;color:#000;margin:0 0 20px 0}
+.PopularBox ul{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.PopularBox ul li{position:relative;border-radius: 10px;overflow: hidden;}
+.PopularBox ul li figure{background-color:#000}
+.PopularBox ul li figure img{width:100%;opacity:.7}
+.PopularBox ul li figcaption{position:absolute;width:100%;bottom:20px;text-align:center}
+.PopularBox ul li figcaption h6{font-size:20px;color:#fff}
 
-@keyframes slide-down{
-    0%{opacity:0;transform:translateY(-100%)}
-    100%{opacity:.9;transform:translateY(0)}
-}
+.AboutBox h3{font-size:22px;color:#000;margin:0 0 5px 0}
+.AboutBox h6{font-size:14px;color:#5e5e5e;margin:0 0 25px 0;line-height:24px;font-weight:600}
+.AboutBox article{display:flex;gap:15px;align-items:center}
+.AboutBox article figure{width:275px;background-color:#000}
+.AboutBox article figure img{opacity:.9}
+.AboutBox article figcaption{width:calc(100% - 290px)}
+.AboutBox article figcaption p{font-size:14px;color:#5e5e5e;margin:0 0 25px 0;line-height:24px;font-weight:600}
 
-.MenuBox{background: transparent;border: none;display: none;}
-.MenuBox span{width: 30px;display: block;background-color: #fff;height: 3px;border-radius: 10px;}
-.MenuBox span+span{margin: 7px 0 0 0;}
+.StyleArea{min-height:calc(100vh - 71px);display:flex;align-items:center;background:#f5f5f5;padding:50px 0}
+.StyleArea .StyleBox{max-width:1000px;margin:auto;display:flex;gap:30px;width:100%}
+.StyleArea .StyleBox .StyleLeft{background-color:#f9f9f9;padding:25px;box-shadow:0 0 10px #dddcdc;width:35%;border-radius:10px;border:3px solid #fff}
+.StyleArea .StyleBox .StyleLeft .Logo{text-align:center;margin:0 0 25px 0}
+.StyleArea .StyleBox .StyleLeft .Logo img{max-width:150px}
+.StyleArea .StyleBox .StyleLeft .Profile{text-align:center;margin:25px 0 0 0}
+.StyleArea .StyleBox .StyleLeft .Profile figure{width: 100px;height: 100px;border: 3px solid #fff;border-radius:50%;box-shadow:0 0 10px #c5c1c1;margin: 0 auto 10px;}
+.StyleArea .StyleBox .StyleLeft .Profile figure img{width:100%}
+.StyleArea .StyleBox .StyleLeft .Profile h4{font-size:20px;color:#469bdb}
+.StyleArea .StyleBox .StyleLeft ul{border-bottom:1px solid #ddd}
+.StyleArea .StyleBox .StyleLeft ul li{border-top:1px solid #ddd;padding:15px 0}
+.StyleArea .StyleBox .StyleLeft ul li h6{font-size:16px;color:#000}
+.StyleArea .StyleBox .StyleLeft ul li p{font-size:13px;font-weight:700;color:#707070;letter-spacing:.3px;line-height:21px}
+.StyleArea .StyleBox .StyleRight{background-color:#f1f1f1;padding:30px 30px 60px 30px;box-shadow:0 0 10px #d7d7d7;width:65%;border-radius:10px;border:3px solid #fff}
 
-.CloseMenu{background: transparent;border: none;width: 30px;height: 30px;margin: 0 0 50px auto; display: none;}
-.CloseMenu span{width: 25px;display: block;background-color: #fff;height: 3px;border-radius: 10px;transform: rotate(45deg);}
-.CloseMenu span+span{transform: rotate(-48deg);margin: -3px 0 0 0;}
+.TitleBox{margin:0 0 35px 0}
+.TitleBox h3{font-size:35px;font-weight:800;margin:0 0 15px 0;color:#000}
+.TitleBox p{font-size:16px;font-weight:600;color:#545454}
 
+.Personal aside{margin:0 0 25px 0}
+.Personal aside input{box-shadow:none;border:2px solid #ddd;padding:13px 20px;height:auto;border-radius:5px;font-size:14px;color:#000;font-weight:700;width:100%;font-family:'Mulish';outline:0}
+.Personal button{background-color:#469bdb;padding:15px 0;color:#fff;font-size:16px;font-weight:600;border-radius:50px;display:block;border:none;width:250px;margin:auto;letter-spacing:.5px}
+.Personal h6{text-align:center;margin:20px 0 0 0;font-size:13px;color:#817d7d;letter-spacing:.4px}
 
-.SlideArea{background-image:url(../images/Slide.png);min-height:100vh;background-size:cover;background-attachment:fixed;display:flex;align-items:center}
-.SlideArea .SlideBox{color:#fff;width: 50%;}
-.SlideArea .SlideBox h1{font-size:80px;font-weight:800;text-transform:capitalize;margin: 0 0 20px 0;font-family:'Poppins',sans-serif}
-.SlideArea .SlideBox p{font-size: 17px;line-height: 27px;margin: 0 0 20px 0;}
-.SlideArea .SlideBox a{padding: 10px 25px;background-color: #ffce00;display: inline-block;color: #000;text-transform: uppercase;font-size: 15px;font-weight: 800;border-radius: 7px;}
+.Service ul{display:flex;gap:20px;font-family:'Mulish'}
+.Service ul li{width:100%;position:relative}
+.Service ul li input{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;cursor:pointer;opacity:0}
+.Service ul li article{background-color:#fff;text-align:center;padding:30px 20px;border-radius:15px;box-shadow:0 0 10px #ddd;border:2px solid #fff}
+.Service ul li article figure{width:150px;height:150px;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:0 0 10px #ddd;margin:0 auto 20px}
+.Service ul li article figure img{width:100%}
+.Service ul li article figcaption{min-height:125px}
+.Service ul li article figcaption h3{font-size:21px;text-transform:capitalize;font-weight:700;margin:0 0 20px 0;color:#3a3a3a}
+.Service ul li article figcaption h6{font-size:20px;color:#3a3a3a;font-weight:700;margin:0 0 10px 0}
+.Service ul li article figcaption p{font-size:13px;font-weight:700;color:#686767}
+.Service ul li article button{background-color:#469bdb;padding:10px 26px;color:#fff;font-size:14px;font-weight:700;border-radius:6px;border:none;font-family:'Mulish';letter-spacing:1px;text-transform:uppercase;transition:0.5s all ease-in-out}
+.Service ul li article button:before{left:9px;top:5px;width:5px;height:10px;border:solid #fff;border-width:0 3px 3px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);display:inline-block;margin:0 10px 0 0}
+.Service ul li input:checked~article{border-color:#469bdb}
+.Service ul li input:checked~article button:before{content:''}
 
-.DishesArea{background-color:#000;padding: 100px 0;}
-.DishesArea .Disheshead{text-align:center;margin:0 0 50px 0}
-.DishesArea .Disheshead h2{color:#fff;text-transform:uppercase;font-weight:900;letter-spacing:1px;margin:0 0 20px 0;font-family:'Poppins',sans-serif;font-size:40px}
-.DishesArea .Disheshead h2 span{display:inline-block;max-width:55px}
-.DishesArea .Disheshead p{color:#b8b8b8;font-size:16px;line-height:25px;letter-spacing:.4px}
+.Professional ul{display:flex;gap:20px;font-family:'Mulish'}
+.Professional ul li{width:100%;position:relative}
+.Professional ul li input{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;cursor:pointer;opacity:0}
+.Professional ul li article{background-color:#fff;text-align:center;padding:30px 20px;border-radius:15px;box-shadow:0 0 10px #ddd;border:2px solid #fff}
+.Professional ul li article .Icon{width:25px;height:25px;position:absolute;top:15px;right:15px;background:#469bdb;border-radius:50%;display:none}
+.Professional ul li article .Icon:before{content:'';left:9px;top:5px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg);position:absolute}
+.Professional ul li article figure{width:100px;height:100px;border-radius:50%;overflow:hidden;border:3px solid #fff;box-shadow:0 0 10px #ddd;margin:0 auto 20px}
+.Professional ul li article figure img{width:100%}
+.Professional ul li article figcaption{min-height:75px}
+.Professional ul li article figcaption h3{font-size:21px;text-transform:capitalize;font-weight:700;margin:0 0 20px 0;color:#3a3a3a}
+.Professional ul li article figcaption h6{font-size:20px;color:#3a3a3a;font-weight:700;margin:0 0 10px 0}
+.Professional ul li article figcaption p{font-size:13px;font-weight:700;color:#686767}
+.Professional ul li article button{background-color:#469bdb;padding:10px 26px;color:#fff;font-size:14px;font-weight:700;border-radius:6px;border:none;font-family:'Mulish';letter-spacing:1px;text-transform:uppercase;transition:0.5s all ease-in-out}
+.Professional ul li input:checked~article{border-color:#469bdb}
+.Professional ul li input:checked~article .Icon{display:block}
 
-.DishesBox figcaption{text-align:center;color:#fff}
-.DishesBox figcaption h3{font-size:20px;font-weight:800;margin:0 0 10px 0;text-transform:uppercase;letter-spacing:.5px;font-family:'Poppins',sans-serif}
-.DishesBox figcaption p{font-size:14px;margin:0 0 10px 0;color:#cfcfcf;font-weight:600;letter-spacing:.4px}
-.DishesBox figcaption h6{font-size:20px;font-weight:800;color:#ffce00}
+/*CalenderBox CSS is Extra */
 
-.AboutArea{background-image:url(../images/Pattern.jpg);padding: 100px 0;}
-.AboutArea .AboutLeft{background-color:#000;position:relative}
-.AboutArea .AboutLeft img{opacity:.8}
-.AboutArea .AboutLeft a{position:absolute;width:70px;height:70px;background-color:#ffce00;border-radius:50%;top:0;left:0;right:0;bottom:0;margin:auto;color:#000;text-align:center;font-size:30px;line-height:70px}
-.AboutArea .AboutRight h2{color:#fff;text-transform:uppercase;font-weight:900;letter-spacing:1px;margin:0 0 20px 0;font-family:'Poppins',sans-serif;font-size:40px;position:relative;padding:0 0 0 70px}
-.AboutArea .AboutRight h2 span{display:inline-block;max-width:60px;position:absolute;left:0;top:20px}
-.AboutArea .AboutRight p{color:#b8b8b8;font-size:16px;line-height:25px;letter-spacing:.4px;margin:0 0 20px 0}
-.AboutArea .AboutRight article{display:flex;justify-content:space-between;margin:60px 0 0 0}
-.AboutArea .AboutRight article aside{text-align:center;width:100%}
-.AboutArea .AboutRight article aside p{margin:10px 0 0 0;color:#fff;text-transform:uppercase;font-family:'Poppins';font-size:14px;font-weight:700;letter-spacing:.5px}
+.CalenderBox{display:flex;gap:15px}
+.CalenderBox .CalenderLeft{width:60%;background-color:#fff;padding:20px;border-radius:10px;box-shadow:0 0 10px #ddd}
+.CalenderBox .CalenderLeft aside{display:flex;justify-content:space-between;align-items:center;margin:0 0 10px 0}
+.CalenderBox .CalenderLeft aside h6{color:#000;font-weight:700;font-size:16px}
+.CalenderBox .CalenderLeft aside i{font-size:22px;width:20px;height:20px;text-align:center;cursor:pointer}
+.CalenderBox .CalenderLeft ol{display:grid;grid-template-columns:repeat(7,1fr);text-align:center}
+.CalenderBox .CalenderLeft ol li{font-weight:700;color:#555;font-size:14px;padding:15px 0}
+.CalenderBox .CalenderLeft ul{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;gap:10px}
+.CalenderBox .CalenderLeft ul li{position:relative}
+.CalenderBox .CalenderLeft ul li input{position:absolute;left:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.CalenderBox .CalenderLeft ul li span{border-radius:50%;cursor:pointer;transition:0.2s;width:30px;height:30px;display:inline-block;font-size:14px;font-weight:600;line-height:30px}
+.CalenderBox .CalenderLeft ul li input:checked~span{background-color:#469bdb;color:#fff}
+.CalenderBox .CalenderLeft ul li.Disable span{color:#c5c0c0}
+.CalenderBox .CalenderLeft ul li.Color span{color:#fff;background-color:#469bdb}
+.CalenderBox .CalenderRight{width:40%}
+.CalenderBox .CalenderRight h6{margin:0 0 20px 0;color:#000;font-weight:700;font-size:16px}
+.CalenderBox .CalenderRight ul{display:grid;grid-template-columns:repeat(2,1fr);text-align:center;gap:15px 10px}
+.CalenderBox .CalenderRight ul li{position:relative}
+.CalenderBox .CalenderRight ul li input{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;cursor:pointer;opacity:0}
+.CalenderBox .CalenderRight ul li span{display:block;background-color:#dfd6d6;padding:9px 0;border-radius:50px;font-size:14px;font-weight:600;color:#000}
+.CalenderBox .CalenderRight ul li input:checked~span{background:#469bdb;color:#fff}
+.CalenderBox .CalenderRight ul li.Disable input{cursor:no-drop}
+.CalenderBox .CalenderRight ul li.Disable span{background:#dfdfdf}
 
-.OfferArea{background-image:url(../images/Offer.png);padding:80px 0;background-attachment:fixed;background-size:cover}
-.OfferArea h2{font-size:40px;font-weight:800;text-transform:capitalize;margin:0 0 30px 0;font-family:'Poppins',sans-serif;color:#fff}
-.OfferArea a{background-color:#fc3;color:#fff;padding:10px 20px;display:inline-block;border-radius:7px;color:#000;font-size:16px;text-transform:uppercase;font-weight:700;font-family:'Poppins'}
+.Successfully span{display:block;max-width:200px;margin:auto}
+.Successfully h4{margin:30px 0 15px 0;font-size:18px;line-height:28px;color:#000}
+.Successfully p{font-size:15px;color:#5a5858;font-weight:600}
 
-.ChefArea{background-color:#000;padding:70px 0;display: none;}
-.ChefArea .ChefHead{text-align:center;margin:0 0 50px 0}
-.ChefArea .ChefHead h2{color:#fff;text-transform:uppercase;font-weight:900;letter-spacing:1px;margin:0 0 20px 0;font-family:'Poppins',sans-serif;font-size:40px}
-.ChefArea .ChefHead h2 span{display:inline-block;max-width:55px}
-.ChefArea .ChefHead p{color:#b8b8b8;font-size:16px;line-height:25px;letter-spacing:.4px}
-
-.ChefBox figcaption{text-align:center;color:#fff}
-.ChefBox figcaption h3{font-size:20px;font-weight:800;margin:0 0 10px 0;text-transform:uppercase;letter-spacing:.5px;font-family:'Poppins',sans-serif}
-.ChefBox figcaption p{font-size:16px;margin:0 0 10px 0;color:#cfcfcf;font-weight:600;letter-spacing:.4px}
-.ChefBox figcaption ul li{display:inline-block;margin:0 10px}
-.ChefBox figcaption ul li a{color:#ffce00;font-size:20px}
-
-.MenuArea{background-color:#000;background-image:url(../images/Pattern.jpg);padding:70px 0 30px;display: none;}
-.MenuArea .MenuHead{text-align:center;margin:0 0 50px 0}
-.MenuArea .MenuHead h2{color:#fff;text-transform:uppercase;font-weight:900;letter-spacing:1px;margin:0 0 30px 0;font-family:'Poppins',sans-serif;font-size:40px}
-.MenuArea .MenuHead h2 span{display:inline-block;max-width:55px}
-.MenuArea .MenuHead ul li{display:inline-block;margin:0 6px}
-.MenuArea .MenuHead ul li a{text-decoration:none;display:inline-block;text-transform:uppercase;color:#000;padding:9px 26px;background-color:#ffce00;border-radius:5px;font-size:16px;font-family:'Poppins';font-weight:600;cursor:pointer}
-.MenuArea .MenuHead ul li a.active{background-color:#ddd}
-.MenuArea .MenuBody .DishesBox{margin-bottom:40px}
-
-.GalleryArea{background-color:#000;padding: 100px 0;}
-.GalleryArea .GalleryHead{text-align:center;margin:0 0 50px 0}
-.GalleryArea .GalleryHead h2{color:#fff;text-transform:uppercase;font-weight:900;letter-spacing:1px;margin:0 0 20px 0;font-family:'Poppins',sans-serif;font-size:40px}
-.GalleryArea .GalleryHead h2 span{display:inline-block;max-width:55px}
-.GalleryArea .GalleryBody{display:flex;flex-wrap:wrap}
-.GalleryArea .GalleryBody a{width:33.33%;background-color:#000}
-.GalleryArea .GalleryBody a img{transition:0.5s all ease-in-out}
-.GalleryArea .GalleryBody a:hover img{opacity:.4}
-
-.TableArea{background-image:url(../images/Pattern.jpg);padding:70px 0;display: none;}
-.TableArea .TableHead{text-align:center;margin:0 0 50px 0}
-.TableArea .TableHead h2{color:#fff;text-transform:uppercase;font-weight:900;letter-spacing:1px;margin:0 0 20px 0;font-family:'Poppins',sans-serif;font-size:40px}
-.TableArea .TableHead h2 span{display:inline-block;max-width:55px}
-.TableArea .TableBody .TableLeft .form-group label{font-size:16px;font-weight:800;color:#ffce00;display:block}
-.TableArea .TableBody .TableLeft .form-group .form-control{display:block;width:100%;border:none;-webkit-box-sizing:border-box;box-sizing:border-box;padding:8px 16px;height:60px;border:1px solid #000;border-radius:3px;background-color:#000;outline:0;box-shadow:none;color:#fff}
-.TableArea .TableBody .TableLeft button{background-color:#fc3;color:#fff;padding:10px 20px;display:inline-block;border-radius:7px;color:#000;font-size:16px;text-transform:uppercase;font-weight:700;font-family:'Poppins'}
-.TableArea .TableBody .TableRight{padding:30px;background-color:#000;color:#fff}
-.TableArea .TableBody .TableRight h3{color:#fff;text-transform:uppercase;font-weight:800;letter-spacing:1px;margin:0 0 20px 0;font-family:'Poppins',sans-serif;font-size:35px}
-.TableArea .TableBody .TableRight p{color:#b8b8b8;font-size:16px;line-height:24px;margin:0 0 15px 0}
-.TableArea .TableBody .TableRight aside{display:flex;justify-content:space-between;border-bottom:1px solid #fff;padding:10px 0 10px 0}
-.TableArea .TableBody .TableRight aside p{color:#fff;margin:0}
-
-.ContactArea{background-color:#000;padding: 100px 0;}
-.ContactArea h2{color:#fff;text-transform:uppercase;font-weight:900;letter-spacing:1px;margin:0 0 50px 0;font-family:'Poppins',sans-serif;font-size:40px;text-align:center}
-.ContactArea h2 span{display:inline-block;max-width:55px}
-.ContactArea .ContactBox h3{font-size:20px;margin-bottom:20px;color:#fff;font-family:'Poppins';text-transform:uppercase;font-weight:800}
-.ContactArea .ContactBox h3 i{color:#fc3;margin:0 10px 0 0}
-.ContactArea .ContactBox p{color:#fff;font-size:16px}
-.ContactArea .ContactBox p strong{color:#fc3;font-size:22px;font-weight:900}
-.ContactArea .ContactBox ul{display:flex;justify-content:space-between}
-.ContactArea .ContactBox ul li{display:inline-block}
-.ContactArea .ContactBox ul li a{color:#fc3;font-size:25px}
-
-footer article{ display:none; }
-footer article iframe{width:100%;height:400px;border:none}
-footer aside{background-color:#000;padding:15px 0;text-align:center;margin:-6px 0 0 0}
-footer aside p{color:#b8b8b8;font-weight:600;font-size:14px}
+.ContinueBox{margin:50px 0 0 0;text-align:center}
+.ContinueBox button{background-color:#469bdb;padding:15px 0;color:#fff;font-size:16px;font-weight:600;border-radius:50px;display:block;border:none;width:250px;margin:auto;letter-spacing:.5px;cursor:pointer}
+.ContinueBox a{padding: 11px 30px;background-color: #fff;color: #469bdb;font-size: 14px;font-weight: 700;border-radius: 50px;display: inline-block;letter-spacing: .5px;cursor: pointer;border: 2px solid #469bdb;margin: 20px 0 0 0;}
+.ContinueBox a:hover{ background-color:#469bdb; color:#fff }
+.ContinueBox h6{font-size:15px;margin:25px 0 0 0;color:#444;letter-spacing:.5px}

@@ -4,641 +4,86 @@
     <title>My Pay</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 
     <header>
         <div class="Header">
-            <div class="container">
+            <div class="HeaderBox">
                 <div class="Logo">
-                    <img src="https://restfood.onlywebcoding.com.ua/images/logo.png">
+                    <img src="images/Logo.png">
                 </div>
                 <div class="Navigation">
-                    <button class="MenuBox">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
                     <ul>
-                        <button class="CloseMenu">
-                            <span></span>
-                            <span></span>
-                        </button>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Dishes">Dishes</a></li>
-                        <li><a href="#About">About us</a></li>
-                        <li><a href="#Gallery">Gallery</a></li>
-                        <li><a href="#Contact">Contact us</a></li>
-                    </ul> 
+                        <li></li>
+                        <li><a href="step1.html">Book Now</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
 
     <section>
-        <div class="SlideArea" id="Home">
-            <div class="container"> 
-                <div class="SlideBox">
-                    <h1>Best quality food</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias provident laborum, recusandae delectus corrupti reprehenderit error distinctio eligendi qui consequuntur officia.</p>
-                    <a target="_blank" href="http://mypaycafe.food4me.net/">order now</a>
+        <div class="ExperinceArea">
+            <div class="ExperinceBox">
+                <div class="ExperinceHead">
+                    <img src="images/Banner.png">
+                    <figcaption>
+                        <h3>Experince Your Best Style</h3>
+                        <a href="step1.html">Book Your Appointmnet</a>
+                    </figcaption>
                 </div>
-                  
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="DishesArea" id="Dishes">
-            <div class="container">
-                <div class="Disheshead">
-                    <h2><span><img src="images/Leaf.png"></span> Our Special Dishes</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, labore <br> quasi temporibus consectetur suscipit sunt tenetur, veniam neque distinctio <br> fugit in sint natus deserunt hic eaque dolores.</p>
-                </div>
-         
-                <div class="DishesBody">
-                    <div class="owl-carousel owl-theme carousel-special-dishes">
-                        <div class="item">
-                            <div class="DishesBox">
+                <div class="ExperinceBody">
+                    <div class="PopularBox">
+                        <h3>Popular Services</h3>
+                        <ul>
+                            <li>
                                 <figure>
-                                    <img src="images/Dishes-1.png" alt="" />
+                                    <img src="images/Popular-1.png">
                                 </figure>
                                 <figcaption>
-                                    <h3>Burger</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$8.60</h6>
+                                    <h6>Women's Haircut</h6>
                                 </figcaption>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="DishesBox">
+                            </li>
+                            <li>
                                 <figure>
-                                    <img src="images/Dishes-2.jpg" alt="" />
+                                    <img src="images/Popular-2.png">
                                 </figure>
                                 <figcaption>
-                                    <h3>Pasta</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$11.30</h6>
+                                    <h6>Men Styling</h6>
                                 </figcaption>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="DishesBox">
+                            </li>
+                            <li>
                                 <figure>
-                                    <img src="images/Dishes-3.jpg" alt="" />
+                                    <img src="images/Popular-3.png">
                                 </figure>
                                 <figcaption>
-                                    <h3>Beef Burger Meal</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$12.99</h6>
+                                    <h6>Bread Trim & Shape</h6>
                                 </figcaption>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Dishes-4.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Double Cheese Pizza</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$15.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Dishes-5.png" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Ceaser Salad</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                    </div> 
-                </div> 
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="AboutArea" id="About">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-5">
-                        <div class="AboutLeft">
-                            <img src="images/About.jpg" alt="" />
-                            <!-- <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i class="fa fa-play"></i></a> -->
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-sm-7">
-                        <div class="AboutRight">
-                            <h2><span><img src="images/Leaf.png"></span> Good food for your all day good mood</h2>
-                            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.</p>
-                            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.</p>
-                            <p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Itaque dolore nisi ipsa neque? Dolorem incidunt fugiat temporibus animi nobis, vero expedita voluptate dignissimos officiis quis pariatur earum voluptas quia sed.</p>
+                    <div class="AboutBox">
+                        <h3>About us</h3>
+                        <h6>Welcome to MyPay, where beauty meets relaxation. We believe self-care is more than a routine—it’s an experience. Our expert stylists and therapists are dedicated to providing high-quality services that leave you looking and feeling your best.</h6>
 
-                            <article>
-                                <aside>
-                                    <img src="images/About-1.png" alt="" />
-                                    <p>Experienced chefs</p>
-                                </aside>
-                                <aside>
-                                    <img src="images/About-2.png" alt="" />
-                                    <p>Original recipes</p>
-                                </aside>
-                                <aside>
-                                    <img src="images/About-3.png" alt="" />
-                                    <p>Fresh ingredients</p>
-                                </aside>
-                            </article> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </section>
+                        <article>
+                            <figure>
+                                <img src="images/About.png">
+                            </figure>
+                            <figcaption>
+                                <p>From hair styling and coloring to skincare, grooming, and spa treatments, we offer a wide range of services tailored to your needs. With a warm, inviting atmosphere and professional care, we ensure every visit is comfortable, rejuvenating, and unforgettable.</p>
+                            </figcaption>
+                        </article>
 
-    <section>
-        <div class="OfferArea">
-            <div class="container">
-                <h2>
-                    Double Cheese Pizza <br />
-                    30% off friday only
-                </h2>
-                <a class="btn booking-scroll" target="_blank" href="http://mypaycafe.food4me.net/">order now</a>
-            </div>
-        </div> 
-    </section>
-
-    <section>
-        <div class="ChefArea">
-            <div class="container">
-                <div class="ChefHead">
-                    <h2><span><img src="images/Leaf.png"></span> Our best chef</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, labore <br> quasi temporibus consectetur suscipit sunt tenetur, veniam neque distinctio <br> fugit in sint natus deserunt hic eaque dolores.</p>
-                </div>
-         
-                <div class="ChefBody">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="ChefBox">
-                                <figure>
-                                    <img src="images/chef-1.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Richard Nauz</h3>
-                                    <p>food chef</p>
-                                    <ul>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="ChefBox">
-                                <figure>
-                                    <img src="images/chef-2.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Olivia Grosh</h3>
-                                    <p>food chef</p>
-                                    <ul>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="ChefBox">
-                                <figure>
-                                    <img src="images/chef-3.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Jeremy White</h3>
-                                    <p>food chef</p>
-                                    <ul>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="ChefBox">
-                                <figure>
-                                    <img src="images/chef-4.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Howard Holmes</h3>
-                                    <p>food chef</p>
-                                    <ul>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:void(0);"><i class="fa fa-instagram"></i></a>
-                                        </li>
-                                    </ul>
-                                </figcaption>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </section>
-
-    <section>
-        <div class="MenuArea">
-            <div class="container">
-                <div class="MenuHead">
-                    <h2><span><img src="images/Leaf.png"></span> menu</h2>
-                    <ul class="list-menu">
-                        <li><a class="filter-button active" data-filter="all">All</a></li>
-                        <li><a class="filter-button" data-filter="Burgers">Burgers</a></li>
-                        <li><a class="filter-button" data-filter="Pizzas">Pizzas</a></li>
-                        <li><a class="filter-button" data-filter="Steaks">Steaks</a></li>
-                        <li><a class="filter-button" data-filter="Pasts">Pasts</a></li>
-                        <li><a class="filter-button" data-filter="Salads">Salads</a></li>
-                        <li><a class="filter-button" data-filter="Deserts">Deserts</a></li>
-                        <li><a class="filter-button" data-filter="Drinks">Drinks</a></li>
-                    </ul>
-                </div>
-                <div class="MenuBody">
-                    <div class="row">
-                        <div class="col-sm-3 filter Burgers Pizzas">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Product-1.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Double Cheese Pizza</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 filter Salads">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Product-2.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Seafood</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 filter Burgers">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Product-3.png" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Double mac burger</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 filter Pasts ">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Product-4.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Pasta</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 filter Burgers">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Product-5.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Beef cheese burger</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 filter Deserts ">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Product-6.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Grand italiano pizza</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 filter Drinks">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Product-7.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Lemonade</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 filter Burgers Steaks">
-                            <div class="DishesBox">
-                                <figure>
-                                    <img src="images/Product-8.jpg" alt="" />
-                                </figure>
-                                <figcaption>
-                                    <h3>Chicken burger</h3>
-                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.</p>
-                                    <h6>$10.00</h6>
-                                </figcaption>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section>
-        <div class="GalleryArea" id="Gallery">
-            <div class="container">
-                <div class="GalleryHead">
-                    <h2><span><img src="images/Leaf.png"></span> Gallery</h2>
-                </div>
-                <div class="GalleryBody">
-                    <a href="images/Gallery-1.jpg" data-lightbox="example">
-                        <img src="images/Gallery-1.jpg" alt="">
-                    </a>
-                    <a href="images/Gallery-2.jpg" data-lightbox="example">
-                        <img src="images/Gallery-2.jpg" alt="">
-                    </a>
-                    <a href="images/Gallery-3.jpg" data-lightbox="example">
-                        <img src="images/Gallery-3.jpg" alt="">
-                    </a>
-                    <a href="images/Gallery-4.jpg" data-lightbox="example">
-                        <img src="images/Gallery-4.jpg" alt="">
-                    </a>
-                    <a href="images/Gallery-5.jpg" data-lightbox="example">
-                        <img src="images/Gallery-5.jpg" alt="">
-                    </a>
-                    <a href="images/Gallery-6.jpg" data-lightbox="example">
-                        <img src="images/Gallery-6.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="TableArea">
-            <div class="container">
-                <div class="TableHead">
-                    <h2><span><img src="images/Leaf.png"></span> Book a table</h2>
-                </div>
-                <div class="TableBody">
-                    <div class="row">
-                        <div class="col-sm-7">
-                            <div class="TableLeft">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="name">Name</label>
-                                            <input class="form-control" type="text" placeholder="Name" id="name" name="name">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="lastname">Last Name</label>
-                                            <input class="form-control" type="text" placeholder="Last Name" id="lastname" name="lastname">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="phone">Phone</label>
-                                            <input class="form-control" type="tel" placeholder="Phone" id="phone" name="phone">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input class="form-control" type="email" placeholder="Email" id="email" name="email">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="date">Date</label>
-                                            <input class="form-control" type="text" placeholder="mm-dd-yy" id="date" name="dates">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-group">
-                                            <label for="time">Time</label>
-                                            <input class="form-control" type="text" placeholder="12:00 AM" id="time" name="times">
-                                        </div>
-                                    </div>
-                                    <button type="submit" id="send" class="btn">Book a table</button>
-                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-5">
-                            <div class="TableRight">
-                                <h3>Opening Hours</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, inventore hic nulla, provident laudantium voluptate ipsa eligendi commodi mollitia vero animi, repudiandae quidem minima est sint sapiente quas iure deleniti.</p>
-                                <aside>
-                                    <p>Monday - Friday</p>
-                                    <p>8AM - 6PM</p>
-                                </aside>
-                                <aside>
-                                    <p>Saturday</p>
-                                    <p>9AM - 5PM</p>
-                                </aside>
-                                <aside>
-                                    <p>Sunday</p>
-                                    <p>9AM - 4PM</p>
-                                </aside>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="ContactArea" id="Contact">
-            <div class="container">
-                <h2><span><img src="images/Leaf.png"></span> Contacts</h2>
-                <div class="row align-items-center">
-                    <div class="col-sm-3">
-                        <div class="ContactBox">
-                            <h3><i class="fa fa-map-marker" aria-hidden="true"></i> Location</h3>
-                            <p>2900 Lapeer Rd, Port Hurons</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="ContactBox">
-                            <h3><i class="fa fa-phone" aria-hidden="true"></i> Phone</h3>
-                            <p><strong>800 478 42 51</strong></p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="ContactBox">
-                            <h3><i class="fa fa-envelope" aria-hidden="true"></i> Email</h3>
-                            <p>info@restfood.com</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="ContactBox">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5343.7395322149205!2d12.567363329924417!3d55.727823729950465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652527d2439dc47%3A0xc93f787132be1d3!2sEhlersvej%207%2C%202900%20Hellerup%2C%20Denmark!5e0!3m2!1sen!2sin!4v1743257494012!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </article>
-        <aside>
-            <p>Copyright © All rights reserved.</p>
-        </aside>
-    </footer>
-
-  
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
-     
-    <script src="js/owl.carousel.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".carousel-special-dishes").owlCarousel({
-                loop: true,
-                margin: 20,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                smartSpeed: 6000,
-                nav: false,
-                loop: true,
-                responsive: {
-                    0: { items: 1 },
-                    600: { items: 2 },
-                    1000: { items: 4 },
-                },
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(".filter-button").click(function () {
-                $(".filter-button").removeClass("active");
-
-                $(this).addClass("active");
-                var value = $(this).attr("data-filter");
-                if (value == "all") {
-                    $(".filter").show("1000");
-                } else {
-                    $(".filter")
-                        .not("." + value)
-                        .hide("3000");
-                    $(".filter")
-                        .filter("." + value)
-                        .show("3000");
-                }
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
-            if (scroll >= 50) {
-                $(".Header").addClass("Fixed");
-            } else {
-                $(".Header").removeClass("Fixed");
-            }
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                let newUrlIS = window.location.origin + window.location.pathname;
-                history.pushState({}, null, newUrlIS);
-            });
-            $(".Navigation ul li a").click(function () {
-                let newUrlIS = window.location.origin + window.location.pathname;
-                history.pushState({}, null, newUrlIS);
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(".MenuBox").click(function(){
-                $(".Navigation ul").toggleClass("Show");
-            });
-            $(".CloseMenu").click(function(){
-                $(".Navigation ul").toggleClass("Show");
-            });
-            $(".Navigation ul li a").click(function(){
-                $(".Navigation ul").toggleClass("Show");
-            });
-        });
-    </script>
-
 
 </body>
 </html>
